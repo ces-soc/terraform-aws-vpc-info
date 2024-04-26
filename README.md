@@ -1,5 +1,3 @@
-![Latest GitHub Release](https://img.shields.io/github/v/release/ces-soc/terraform-aws-vpc-info?sort=semver)
-
 # Terraform AWS VPC Info
 
 This module retrieves some VPC and subnet information used to deploy to services and tasks to the campuses supported.
