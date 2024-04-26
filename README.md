@@ -20,8 +20,7 @@ module "soc-vpcs" {
 After defining the module you can then retrieve the information you need (see available [outputs](#output) below) using the interpolation syntax:
 
 ```hcl
-...
-  vpc_id = module.soc-vpc["byu"].vpc.id
+  vpc_id = module.soc-vpcs["byu"].vpc.id
 
 ```
 
