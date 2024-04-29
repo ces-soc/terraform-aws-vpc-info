@@ -21,3 +21,7 @@ output "public_subnets" {
 output "data_subnets" {
   value = [data.aws_subnet.data_a, data.aws_subnet.data_b]
 }
+
+output "on_prem_deploy" {
+  value = local.on_prem_deploy
+}

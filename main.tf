@@ -7,7 +7,7 @@ terraform {
 
 
 data "aws_ssm_parameter" "vpc_parameters" {
-  name = "/ces/terraform/config"
+  name = "/${var.campus}/terraform/config"
 }
 
 locals {
@@ -22,6 +22,7 @@ locals {
   data_b_subnet_id    = lookup(local.vpc_info, "${var.campus}-data-b")
   public_a_subnet_id  = lookup(local.vpc_info, "${var.campus}-public-a")
   public_b_subnet_id  = lookup(local.vpc_info, "${var.campus}-public-b")
+  on_prem_deploy      = lookup(local.vpc_info, "${var.campus}-on-prem-deploy")
 }
 
 
